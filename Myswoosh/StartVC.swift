@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartVC: UIViewController {
 
-    @IBOutlet var view1: UIView!
+    
     
     
     override func viewDidLoad() {
@@ -19,15 +19,18 @@ class ViewController: UIViewController {
         // My first Work wth xcode and github
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
+    
+    @IBAction func segueToLeagueVC(_ sender: Any) {
+        
+        performSegue(withIdentifier: "LeagueVCSegue", sender: self)
+        
     }
 
-    @IBAction func nextView(_ sender: Any) {
-        
-        
-    }
 
 }
 
